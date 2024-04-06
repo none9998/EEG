@@ -26,18 +26,26 @@ bad_channels interpolation
 
 2. Use visually detected
    -> raw.info['bads'].extend(channels)
+   
    -> raw.interpolate_bads()
+   
    -> raw.filter(l_freq = , h_freq)
 
-3. Median
+
+4. Median
+   
    -> raw_data transforms to numpy
+   
    -> n_data[ch_names].rolling().median()
-   -> df[col] = df[col].bfill()  
+   
+   -> df[col] = df[col].bfill()
+   
         # 앞쪽 값으로 뒤쪽의 결측값 채우기
         df[col] = df[col].ffill()
    
    -> data_interpolated = df.to_numpy().T
-      data[data_num]._data = data_interpolated
+   
+       data[data_num]._data = data_interpolated
 
 # 3rd step
 
