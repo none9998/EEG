@@ -1,4 +1,4 @@
-# EEG Preprocessing 
+# EEG Preprocessing & Classification
 
 
 Data -> mat file 
